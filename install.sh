@@ -23,5 +23,6 @@ cmake ..
 cmake --build . -j
 sudo make install
 cd ..
+cd ..
 sudo bash minimal-install-terminal/install.sh
 echo "//////////////////////installation is finished//////////////////////"
