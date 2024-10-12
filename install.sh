@@ -11,17 +11,17 @@ git clone https://github.com/semichuk/plasma-active-application.git
 git clone https://github.com/semichuk/linux-kde-theme.git
 git clone https://github.com/semichuk/minimal-install-terminal.git
 
-sudo bash /linux-icon-theme/install.sh -b
-sudo bash /linux-cursor/install.sh
-plasmapkg2 -i /plasma-active-application
-sudo bash /linux-kde-theme/install.sh -w sharp
+sudo bash linux-icon-theme/install.sh -b
+sudo bash linux-cursor/install.sh
+plasmapkg2 -i plasma-active-application
+sudo bash linux-kde-theme/install.sh -w sharp
 sudo apt install git cmake g++ extra-cmake-modules kwin-dev libkf5configwidgets-dev 
-cd /kde-rounded-corners
+cd kde-rounded-corners
 mkdir build
 cd build
 cmake ..
 cmake --build . -j
 sudo make install
 cd ..
-sudo bash /minimal-install-terminal/install.sh
+sudo bash minimal-install-terminal/install.sh
 echo "//////////////////////installation is finished//////////////////////"
