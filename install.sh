@@ -15,7 +15,7 @@ sudo bash linux-icon-theme/install.sh -b
 sudo bash linux-cursor/install.sh
 plasmapkg2 -i plasma-active-application
 sudo bash linux-kde-theme/install.sh -w sharp
-sudo apt install git cmake g++ extra-cmake-modules kwin-dev libkf5configwidgets-dev 
+sudo apt install git cmake g++ extra-cmake-modules kwin-dev libkf5configwidgets-dev -y
 cd kde-rounded-corners
 mkdir build
 cd build
