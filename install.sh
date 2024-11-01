@@ -2,6 +2,7 @@ echo "//////////////////////minimal install ubuntu//////////////////////"
 sudo apt install kde-plasma-desktop latte-dock zsh timeshift konsole sddm ark zip unzip dotnet-sdk-8.0 flameshot transmission krita neofetch elisa ffmpeg lame flatpak network-manager pulseaudio-module-bluetooth plasma-nm dolphin wireguard inkscape libreoffice -y
 #sudo apt purge kwrite konqueror kwalletmanager plasma-discover plasma-discover-common snapd
 sudo apt purge snapd -y
+sudo systemctl disable systemd-networkd-wait-online.service
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 git clone https://github.com/semichuk/linux-icon-theme.git
 git clone https://github.com/semichuk/linux-cursors.git
