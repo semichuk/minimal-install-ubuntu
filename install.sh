@@ -3,6 +3,7 @@ sudo apt install kde-plasma-desktop latte-dock zsh timeshift konsole sddm ark zi
 
 #sudo apt purge kwrite konqueror kwalletmanager plasma-discover plasma-discover-common snapd
 sudo apt purge snapd -y
+sudo apt purge snapd -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 git clone https://github.com/semichuk/linux-icon-theme.git
 git clone https://github.com/semichuk/linux-cursors.git
@@ -26,6 +27,8 @@ cmake --build . -j
 sudo make install
 cd ..
 cd ..
+cd minimal-install-terminal/
+sudo bash install.sh
 cd minimal-install-terminal/
 sudo bash install.sh
 echo "//////////////////////installation is finished//////////////////////"
